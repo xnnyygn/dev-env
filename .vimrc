@@ -50,3 +50,8 @@ map <leader>e :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 nmap <leader>nt :NERDTreeFind<CR>
 
 map <leader>tt :TagbarToggle<CR>
+
+let g:ctrlp_custom_ignore = { 
+  \ 'dir':  '\v[\/]\.(git|svn)$',
+  \ 'file': '\v\.(class)$'
+  \ }
