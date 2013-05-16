@@ -27,7 +27,7 @@ set number
 syntax on
 set shiftwidth=2
 set softtabstop=2
-set fileencodings=utf8,gbk
+set fileencodings=utf8,cp936
 set foldmethod=syntax
 
 let g:user_zen_settings = {
@@ -50,6 +50,10 @@ map <leader>e :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 nmap <leader>nt :NERDTreeFind<CR>
 
 map <leader>tt :TagbarToggle<CR>
+
+map <leader>p :Project<CR>
+
+map <Enter> o<ESC>
 
 let g:ctrlp_custom_ignore = { 
   \ 'dir':  '\v[\/]\.(git|svn)$',
