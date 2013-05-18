@@ -108,3 +108,4 @@ fi
 
 # set bash use vi mode
 set -o vi
+alias findfile='find -type f'
