@@ -22,6 +22,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'othree/vim-autocomplpop'
 Bundle 'vim-scripts/L9'
+Bundle 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on     " required!
 
@@ -31,7 +32,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set fileencodings=utf8,cp936
-set foldmethod=syntax
+" set foldmethod=syntax
 
 let g:user_zen_settings = {
 \  'indentation' : '  ',
