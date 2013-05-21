@@ -15,11 +15,13 @@ Bundle 'ctrlp.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'project.tar.gz'
-" Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fugitive'
 Bundle 'AutoClose'
 Bundle 'Tagbar'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
+Bundle 'othree/vim-autocomplpop'
+Bundle 'vim-scripts/L9'
 
 filetype plugin indent on     " required!
 

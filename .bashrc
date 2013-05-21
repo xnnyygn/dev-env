@@ -109,3 +109,5 @@ fi
 # set bash use vi mode
 set -o vi
 alias findfile='find -type f'
+
+export PS1='\u@\h:\w\[\e[33m\]$(__git_ps1 "(%s)")\[\e[0m\]\$ '
