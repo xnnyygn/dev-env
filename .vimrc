@@ -63,3 +63,5 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|svn)$',
   \ 'file': '\v\.(class)$'
   \ }
+
+let NERDTreeShowBookmarks=1
