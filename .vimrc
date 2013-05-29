@@ -57,8 +57,6 @@ map <leader>tt :TagbarToggle<CR>
 
 map <leader>p :Project<CR>
 
-map <Enter> o<ESC>
-
 let g:ctrlp_custom_ignore = { 
   \ 'dir':  '\v[\/]\.(git|svn)$',
   \ 'file': '\v\.(class)$'
