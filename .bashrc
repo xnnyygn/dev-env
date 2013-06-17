@@ -109,6 +109,8 @@ fi
 # set bash use vi mode
 set -o vi
 alias findfile='find -type f'
+alias wl='wc -l'
+alias rm='rm -i'
 
 export PS1='\u@\h:\w\[\e[33m\]$(__git_ps1 "(%s)")\[\e[0m\]\$ '
 export EDITOR=vim

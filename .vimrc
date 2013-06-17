@@ -63,3 +63,5 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 let NERDTreeShowBookmarks=1
+
+set completeopt=preview
