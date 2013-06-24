@@ -17,16 +17,17 @@ class PeSSH:
 		c.prompt()
 		c.logout()
 	'''
-	def __init__(self, host, encoding = None):
+	def __init__(self, host, encoding = None, logfile = None):
 		self.host = host
 		self.encoding = encoding
+		self.logfile = logfile
 
 	def login(self, username, password = None):
 		cmd = 'ssh -l %s %s' % (username, self.host)
 		if self.encoding:
 			cmd = ('luit -encoding %s ' % self.encoding) + cmd
 		self.process = pexpect.spawn(cmd)
-		self.process.logfile = sys.stdout
+		self.process.logfile = self.logfile
 		if password:
 			self.process.expect('.*[pP]assword:.*')
 			self.process.sendline(password)
@@ -39,6 +40,12 @@ class PeSSH:
 
 	def sendline(self, line):
 		self.process.sendline(line)
+
+	def interact(self):
+		self.process.interact()
+
+	def readline(self):
+		return self.process.readline()
 
 	def logout(self):
 		ps = subprocess.Popen('ps -o pid --noheaders --ppid %d' % self.process.pid, \
