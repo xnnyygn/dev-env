@@ -1,1 +1,13 @@
+;; display line number
+;; (add-to-list 'load-path "~/.emacs.d/plugins")
+;; (add-to-list 'load-path "~/.emacs.d/plugins/git-emacs")
+;; (add-to-list 'load-path "~/.emacs.d/plugins/icicles")
+;; (load "linum.el")
+;; (require 'linum)
+;; (require 'git-emacs)
+;; (require 'icicles)
 (menu-bar-mode -1)
+;; (global-linum-mode 1)
+(prefer-coding-system 'chinese-gbk)
+(prefer-coding-system 'utf-8)
+(setq make-backup-files nil)
